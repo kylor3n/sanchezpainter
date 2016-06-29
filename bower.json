@@ -1,0 +1,20 @@
+{
+  "name": "sanchezpainter",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "'quxncxrlos' <'quancarlos@icloud.com'>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/quxncxrlos/sanchezpainter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

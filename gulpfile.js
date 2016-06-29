@@ -16,3 +16,7 @@ gulp.task('less', function () {
     .pipe(cleancss({compatibility: 'ie8'}))
     .pipe(gulp.dest('assets/css/'));
 });
+gulp.task('copy', function () {
+    gulp.src("bower_components/bootstrap/dist/fonts/*")
+    .pipe(gulp.dest('assets/fonts/'))
+})
