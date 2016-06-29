@@ -43,3 +43,25 @@ html(lang='en')
                             Hi! My name is Erick Sanchez and I'm a talented house painter with over 10 years of experience in spray, roller and brush painting for residential and commercial  areas.<br /><br />Offering professional service in Fort Worth, Dallas and surrounding areas, providing an optimal and durable job in interior and exterior painting with high quality products in the market.<br /><br />As an honest person with great values and principles I also provide warranty and successful in my work to achieve a full satisfaction and a long time customer relationship.
                     figure.col-xs-12.col-sm-6
                         img.img-responsive.img-circle.center-block(src='assets/img/about-me.jpg')
+        section#gallery.container
+            .row
+                .col-xs-12
+                    h1.text-center.section_title How I <b>work</b>
+            .row
+                .col-xs-12
+                    #gallerycontainer
+                        - for (var x = 1; x <= 5; x++)
+                            a.thumbnail(href='assets/img/gallery/photo'+ x +'.jpg')
+                                img(src='assets/img/gallery/thumbnails/photo'+ x +'.jpg')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js')
+        script(src='assets/js/jquery.magnific-popup.min.js')
+        script(type='text/javascript').
+            $(document).ready(function() {
+                $('.thumbnail').magnificPopup({
+                    type:'image',
+                    zoom: {
+                        enabled: true,
+                        duration: 300
+                        }
+                });
+            });

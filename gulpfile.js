@@ -20,9 +20,17 @@ gulp.task('less', function () {
 gulp.task('copy', function () {
     gulp.src("bower_components/bootstrap/dist/fonts/*")
     .pipe(gulp.dest('assets/fonts/'))
+    gulp.src("bower_components/magnific-popup/dist/*.min.js")
+    .pipe(gulp.dest('assets/js/'))
 })
 gulp.task('imgmin', function () {
          gulp.src('assets/img/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('assets/img/'))
+         gulp.src('assets/img/gallery/thumbnails/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('assets/img/gallery/thumbnails/'))
+         gulp.src('assets/img/gallery/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('assets/img/gallery/'))
 });
