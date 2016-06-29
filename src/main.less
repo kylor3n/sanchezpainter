@@ -19,3 +19,57 @@
 // Utility classes
 @import "@{path}utilities.less";
 @import "@{path}responsive-utilities.less";
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import 'https://fonts.googleapis.com/css?family=Heebo:400,700';
+header {
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    #logo {
+        margin: 50px auto 0;
+    }
+    #phone {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fdd835;
+        width: 250px;
+        height: 70px;
+        margin: 75px auto 0;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+        line-height: 70px;
+        border: 2px solid #D6C068;
+    }
+    #herostatement {
+        margin-top: 75px;
+        color: white;
+        font-size: 3.5em;
+        line-height: 60px;
+        text-align: center;
+        font-family: "Heebo";
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        #logo {
+            max-width: 374px;
+        }
+        #herostatement {
+            margin-top: 100px;
+            font-size: 5em;
+            line-height: normal;
+        }
+        #phone {
+            margin-right: 0;
+            margin-top: 50px;
+        }
+    }
+}
