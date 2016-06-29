@@ -1,4 +1,7 @@
 - var phone='(682) 667-7844'
+- var email='sanchezpainter@email.com'
+- var domain='sanchezpainter.com'
+- var year='2016'
 doctype html
 html(lang='en')
     head
@@ -53,6 +56,27 @@ html(lang='en')
                         - for (var x = 1; x <= 5; x++)
                             a.thumbnail(href='assets/img/gallery/photo'+ x +'.jpg')
                                 img(src='assets/img/gallery/thumbnails/photo'+ x +'.jpg')
+        footer
+            .container
+                .row
+                    .col-xs-12
+                        h1.text-center.section_title Get in <b>touch</b>
+                .row
+                    .col-xs-12
+                        #footer-info.container
+                            .row
+                                .col-xs-12.col-sm-3.col-md-4
+                                    i.glyphicon.glyphicon-user
+                                    |  Erick Sanchez
+                                .col-xs-12.col-sm-4.col-md-4
+                                    i.glyphicon.glyphicon-earphone
+                                    | #{phone}
+                                .col-xs-12.col-sm-5.col-md-4
+                                    i.glyphicon.glyphicon-envelope
+                                    | #{email}
+                .row
+                    .col-xs-12
+                        #copyright &copy; #{year} #{domain}
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js')
         script(src='assets/js/jquery.magnific-popup.min.js')
         script(type='text/javascript').
